@@ -14,40 +14,15 @@
     <div class="caja"><p>caja2</p></div>
     <div class="caja"><p>caja3</p></div>
     <div class="caja"><p>caja4</p></div>
+    <div>
+        <label for="menu principal">es opcional xq es busacdor: volver al menu principal</label>
+        <a href="https://temadomtallerx3-dom-principal.netlify.app">menu principal</a>
+    </div>
+    
+
+    <script src="script.js"></script>
 </body>
   
-<script>
-    function cambiarTexto(){
-        // Cambia el texto del elemento "titulo"
-        document.getElementById("titulo").innerHTML = "Hola Mundo";
-        // Cambia el mensaje del elemento "mensaje"
-        document.getElementById("mensaje").innerHTML = "Has hecho clic en el botón y cambiaste el mensaje";
-    }   
-
-    var datoclasName = document.getElementsByClassName("caja");
-    console.log(datoclasName);
-    console.log(typeof(datoclasName));
-    for (let i = 0; i < datoclasName.length; i++){
-        console.log(datoclasName[i]);
-    }
-      
-    var caja2 = document.getElementById("caja2");
-    // obtener los elementos del HTML
-    var datoCaja2 = caja2.innerHTML;
-    console.log("info es: ", datoCaja2);
-    console.log(typeof(datoCaja2));
-    
-    // reemplazar o asignar información
-    caja2.innerHTML = "<h1>Nuevo contenido Caja2</h1>";
-    var nuevoDato = caja2.innerHTML;
-    console.log(nuevoDato);
-    console.log("El solo texto: " + caja2.innerText);
-    
-    // obtener el nuevo dato
-    nuevoDato = caja2.textContent;
-    console.log(nuevoDato);
-    caja2.textContent = "Nuevo Reemplazo solo Texto";
-    console.log(nuevoDato);
-</script>
-  
+ 
 </html>
+
